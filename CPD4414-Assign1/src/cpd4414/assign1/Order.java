@@ -35,6 +35,17 @@ public class Order {
         notes = "";
         
     }
+    
+    public Order(String customerId){
+        customerId = "";
+        customerName = "";
+        timeRecieved = new Date();
+        timeProcessed = new Date();
+        timeFulfilled = new Date();
+        purchaseList = new int[99];
+        notes = "";
+        
+    }
 
     public Order(String customerId, String customerName, Date timeRecieved, Date timeProcessed, Date timeFulfilled, int[] purchaseList, String notes) {
         this.customerId = customerId;
