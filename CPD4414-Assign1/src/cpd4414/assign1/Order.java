@@ -1,3 +1,4 @@
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -5,6 +6,8 @@
  */
 
 package cpd4414.assign1;
+
+import java.util.Date;
 
 import java.util.Date;
 
@@ -33,6 +36,16 @@ public class Order {
         
     }
 
+    public Order(String customerId, String customerName, Date timeRecieved, Date timeProcessed, Date timeFulfilled, int[] purchaseList, String notes) {
+        this.customerId = customerId;
+        this.customerName = customerName;
+        this.timeRecieved = timeRecieved;
+        this.timeProcessed = timeProcessed;
+        this.timeFulfilled = timeFulfilled;
+        this.purchaseList = purchaseList;
+        this.notes = notes;
+    }
+    
     public String getCustomerId() {
         return customerId;
     }
