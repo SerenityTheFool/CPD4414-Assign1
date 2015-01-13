@@ -34,7 +34,16 @@ public class Order {
         
     }
     
-
+    public Order(String customerId, String customerName, Date timeRecieved, Date timeProcessed, Date timeFulfilled, int[] purchaseList, String notes) {
+        this.customerId = customerId;
+        this.customerName = customerName;
+        this.timeRecieved = timeRecieved;
+        this.timeProcessed = timeProcessed;
+        this.timeFulfilled = timeFulfilled;
+        this.purchaseList = purchaseList;
+        this.notes = notes;
+    }
+    
     public String getCustomerId() {
         return customerId;
     }
